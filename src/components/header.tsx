@@ -3,6 +3,13 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="header">
+            <div className="logo-text">
+        <img
+          src="/logo4epuha-white.png"
+          className="logo"
+        />
+        <span className="site-name">4epuBank</span>
+      </div>
       <nav className="nav">
         <button  className="nav-link">Home</button>
         <button  className="nav-link">Careers</button>

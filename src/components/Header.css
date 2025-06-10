@@ -82,3 +82,21 @@
     background-color: #aee71c;
 
 }
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  user-select: none;
+  width: 20%;
+}
+
+.logo {
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+}
