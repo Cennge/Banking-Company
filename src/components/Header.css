@@ -13,6 +13,8 @@
     display: flex;
     overflow: hidden;
     align-items: center;
+    border: 1px solid #262626;
+    z-index: 1000;
 }
 
 .nav {
