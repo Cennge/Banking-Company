@@ -1,0 +1,84 @@
+.header {
+    width: 85%;
+    top: 50px;
+    left: 162px;
+    border-radius: 100px;
+    justify-content: space-between;
+    border-width: 1px;
+    padding-top: 20px;
+    padding-right: 34px;
+    padding-bottom: 20px;
+    padding-left: 34px;
+    background-color: #1C1C1C;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.nav {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    width: 20%;
+    height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 12px 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 10rem;
+}
+
+
+.nav-link:hover {
+    background-color: #262626;
+}
+
+.actions {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;   
+}
+
+.sign-up {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+}
+
+.sign-up:hover {
+    color: #9EFF00;
+}
+
+.login {
+    background-color: #C6FF00;
+    border: none;
+    color: black;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.login:hover {
+    background-color: #aee71c;
+
+}

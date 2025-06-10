@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 /* font-family: 'Lexend', sans-serif; */
 
@@ -7,3 +7,10 @@
   padding: 0;
 }
 
+.Header-Container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
