@@ -7,6 +7,11 @@ export function Home() {
             <div className='sec'>
                 <Section6/>
             </div>
+
+            <div className='sec'>
+
+            </div>
+
             <div className='BGObj-1 '>
                 <BGObjects />          
             </div>
