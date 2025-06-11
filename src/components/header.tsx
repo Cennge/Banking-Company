@@ -1,3 +1,4 @@
+import { Link, Outlet } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -11,10 +12,12 @@ const Header = () => {
         <span className="site-name">4epuBank</span>
       </div>
       <nav className="nav">
-        <button className="nav-link">Home</button>
-        <button className="nav-link">Careers</button>
-        <button className="nav-link">About</button>
-        <button className="nav-link">Security</button>
+        <Link to="/home" className="nav-link">Home</Link>
+        <Link to="/careers" className="nav-link">Careers</Link>
+        <Link to="/about" className="nav-link">About</Link>
+        <Link to="/security" className="nav-link">Security</Link>
+
+        <Outlet />
       </nav>
       <div className="actions">
         <button className="sign-up">Sign Up</button>
