@@ -1,0 +1,144 @@
+
+
+
+.footer {
+    width: 100%;
+    height: 25%;
+    background-color: #1C1C1C;
+    color: #d4d4d4;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lexend', sans-serif;
+    justify-content: center;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4ff00;
+    margin-bottom: 1rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.footer-nav a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: #d4ff00;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-top: 1px solid #333;
+    padding: 2%;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    width: 80%;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-bottom {
+    width: 80%;
+    background: #1A1A1A;
+    border: 1px solid #262626;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    border-radius: 100px;
+    border-width: 1px;
+    color: #B3B3B3;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #d4ff00;
+    font-size: 1.2rem;
+}
+
+.rights {
+    font-size: 0.8rem;
+}
+
+.legal-links {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.legal-links a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    user-select: none;
+    width: 20%;
+}
+
+.logo {
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo-circle {
+    width: 52;
+    height: 52;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 14px;
+    background: #CAFF33;
+}
+
+.nav-link1:hover
+{
+    color: #CAFF33;
+}
+
