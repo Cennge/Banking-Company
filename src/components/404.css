@@ -1,0 +1,89 @@
+.error-page {
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    line-height: 1;
+}
+
+.text-404 {
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 0.05);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.text-404.overlay {
+    color: #CAFF33;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(0 98%, 100% 2%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 98%, 100% 2%, 100% 100%, 0% 100%);
+}
+
+
+h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Lexend', sans-serif;
+}
+
+h2 span {
+    color: #CAFF33;
+}
+
+.background-circles {
+    position: absolute;
+    border: 1px dashed #313131;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    z-index: 0;
+}
+
+.circle1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+}
+
+.circle3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.3);
+}
