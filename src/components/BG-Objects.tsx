@@ -3,8 +3,8 @@ import React from 'react';
 const BGObjects: React.FC = () => {
     return (
         <svg
-            width="5512"
-            height="3992"
+            width="4512"
+            height="2992"
             viewBox="0 0 2756 1996"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
