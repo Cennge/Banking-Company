@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.BodyBackground {
+  background: #1A1A1A;
+  width: 100%;
+  padding-top: 2rem;
+}

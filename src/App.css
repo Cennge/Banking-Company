@@ -4,13 +4,6 @@
   padding: 0;
 }
 
-.BodyBackground {
-  background: #1A1A1A;
-  width: 100%;
-  height: 100vh;
-  padding-top: 50px;
-}
-
 .Header-Container {
   display: flex;
   justify-content: center;
@@ -19,11 +12,3 @@
   z-index: 1000;
 }
 
-.BGObj-1 {
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}

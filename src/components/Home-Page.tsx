@@ -1,4 +1,5 @@
 import BGObjects from './BG-Objects';
+import './Home-Page.css'
 
 export function Home() {
     return (

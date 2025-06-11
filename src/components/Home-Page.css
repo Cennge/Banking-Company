@@ -1,0 +1,8 @@
+.BGObj-1 {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}

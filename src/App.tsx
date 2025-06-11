@@ -5,16 +5,15 @@ import { Home } from './components/Home-Page'
 
 function App() {
   return (
-    <div className='BodyBackground'>
+    <div>
       <BrowserRouter>
+        <div className="Header-Container">
+          <Header />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
         </Routes>
-
-        <div className="Header-Container">
-          <Header />
-        </div>
       </BrowserRouter>
 
     </div>
