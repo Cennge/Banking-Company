@@ -1,18 +1,27 @@
 import './App.css'
-import Header from './components/header';
 import BGObjects from './components/BG-Objects';
+import Header from './components/header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './components/Home-Page'
 
 function App() {
   return (
     <div className='BodyBackground'>
-      
-      <div className='BGObj-1 '>
-      <BGObjects />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
+        </Routes>
 
-      <div className="Header-Container">
-      <Header />
-      </div>
+        <div className="Header-Container">
+          <Header />
+        </div>
+
+        <div className='BGObj-1 '>
+          <BGObjects />
+        </div>
+
+      </BrowserRouter>
 
     </div>
   );
