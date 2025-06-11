@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 .BodyBackground {
   background: #1A1A1A;
   width: 100%;
