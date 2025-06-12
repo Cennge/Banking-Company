@@ -2,11 +2,28 @@
 
 html, body {
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
 }
 
 .BodyBackground {
   background: #1A1A1A;
   width: 100%;
   padding-top: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #363636;
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #C6FF00;
 }
