@@ -1,5 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 import './Header.css';
+import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
   return (
@@ -19,9 +20,12 @@ const Header = () => {
 
         <Outlet />
       </nav>
+
+      <div className='burger-menu-header'><BurgerMenu /></div>
+
       <div className="actions">
-        <button className="sign-up">Sign Up</button>
-        <button className="login">Login</button>
+        <Link to="/sign-in" className="sign-up" style={{ textDecoration: 'none' }}>Sign In</Link>
+        <Link to="/login" className="login" style={{ textDecoration: 'none' }}>Login</Link>
       </div>
     </header>
   );

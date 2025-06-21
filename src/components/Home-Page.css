@@ -151,17 +151,17 @@
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
-    
+
 }
 
 .container-section3 .icon-section3 {
-    border: none !important;                /* Убираем границу */
-    border-image: none !important;          /* Убираем градиентную обводку */
-    padding: 14px;                          /* Можно оставить, если нужно пространство */
+    border: none !important;
+    border-image: none !important;
+    padding: 14px;
     background: linear-gradient(180deg,
-        rgba(202, 255, 51, 0.1) 0%,
-        rgba(202, 255, 51, 0) 46.76%);       /* Градиентный фон — оставить */
-    border-radius: 50px;                    /* Скругление — можно оставить */
+            rgba(202, 255, 51, 0.1) 0%,
+            rgba(202, 255, 51, 0) 46.76%);
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,9 +383,11 @@
     background-color: #C6FF00;
     cursor: pointer;
 }
+
 .container-section3 .button-section3:hover .text3-section3 {
     color: black;
 }
+
 .container-section3 .abstract-design2-section3 {
     flex-shrink: 0;
     width: 224px;
@@ -429,4 +431,3 @@
     position: relative;
     overflow: visible;
 }
-

@@ -1,7 +1,6 @@
 import BGObjects from "./BG-Objects";
 import "./Home-Page.css";
 import { Journey } from "./Journey";
-import { FaPiggyBank, FaChartLine, FaHome, FaGraduationCap, FaBuilding, FaMoneyBillWave, FaRocket, FaWallet } from 'react-icons/fa';
 
 export function Home() {
   return (
