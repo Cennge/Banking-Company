@@ -1,12 +1,17 @@
 import BGObjects from "./BG-Objects";
 import "./Home-Page.css";
 import { Journey } from "./Journey";
+import { useState } from "react"; 
 
 export function Home() {
   return (
     <div>
       <div className="sec">
         <Journey />
+      </div>
+
+       <div className="sec">
+        <Section2 />
       </div>
 
       <div className="sec">
@@ -23,6 +28,8 @@ export function Home() {
 interface Section3Props extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
 }
+
+
 
 export function Section3(props: Section3Props) {
     const { className = '', ...rest } = props;
@@ -193,3 +200,96 @@ export function Section3(props: Section3Props) {
     </div>
   );
 };
+
+
+export const Section2 = () => {
+  const [activeTab, setActiveTab] = useState<'individuals' | 'business'>('individuals');
+
+  const individualCards = [
+    {
+      title: 'Checking Accounts',
+      text: 'Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.',
+      icon: 'IconSec1.svg',
+    },
+    {
+      title: 'Savings Accounts',
+      text: 'Build your savings with our competitive interest rates and flexible savings account options. Whether youre saving for a specific goal or want to grow your wealth over time, we have the right account for you.',
+      icon: 'IconSec2.svg',
+    },
+    {
+      title: 'Loans and Mortgages',
+      text: 'Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application process and help you secure the funds you need.',
+      icon: 'IconSec3.svg',
+    },
+  ];
+
+  const businessCards = [
+    {
+      title: 'Business Checking',
+      text: 'Manage your business finances efficiently with tailored business checking solutions.',
+      icon: 'IconSec6.svg',
+    },
+    {
+      title: 'Corporate Loans',
+      text: 'Empower your growth with loans designed for businesses of all sizes.',
+      icon: 'IconSec5.svg',
+    },
+    {
+      title: 'Merchant Services',
+      text: 'Streamline your transactions with our powerful merchant tools.',
+      icon: 'IconSec4.svg',
+    },
+  ];
+
+  const currentCards = activeTab === 'individuals' ? individualCards : businessCards;
+
+  return (
+    <div className="section2-container">
+      <div className="section2-heading-row">
+        <h2 className="section2-heading">
+          Our <span className="highlight">Products</span>
+        </h2>
+
+        <div className="section2-toggle">
+          <button
+            className={`section2-toggle-btn ${activeTab === 'individuals' ? 'active' : ''}`}
+            onClick={() => setActiveTab('individuals')}
+          >
+            For Individuals
+          </button>
+          <button
+            className={`section2-toggle-btn ${activeTab === 'business' ? 'active' : ''}`}
+            onClick={() => setActiveTab('business')}
+          >
+            For Businesses
+          </button>
+        </div>
+      </div>
+
+      <p className="section2-subtext">
+        Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations.
+      </p>
+
+      <div className="section2-grid">
+        {currentCards.map((card, index) => (
+          <div key={index} className="section2-card">
+            <div className="section2-icon-wrapper">
+              <img src={card.icon} alt={`${card.title} Icon`} className="section2-icon" />
+            </div>
+            <h3 className="section2-card-title">{card.title}</h3>
+            <p className="section2-card-text">{card.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
+
+
+
+
+
+
+
