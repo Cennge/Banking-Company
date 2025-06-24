@@ -1,435 +1,435 @@
 .BGObj-1 {
-    position: absolute;
-    top: -50px;
-    left: -200px;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
+  position: absolute;
+  top: -50px;
+  left: -200px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .sec {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .container-section3,
 .container-section3 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container-section3 {
-    width: 85%;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .container-section3 .text-container-section3 {
-    padding: 0px 300px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  padding: 0px 300px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .container-section3 .heading-section3 {
-    color: var(--green-60, #caff33);
-    text-align: left;
-    font-family: "Lexend-Medium", sans-serif;
-    font-size: 48px;
-    line-height: 150%;
-    font-weight: 500;
-    position: relative;
-    align-self: stretch;
+  color: var(--green-60, #caff33);
+  text-align: left;
+  font-family: "Lexend-Medium", sans-serif;
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
 }
 
 .container-section3 .paragraph-section3 {
-    color: var(--grey-70, #b3b3b3);
-    text-align: left;
-    font-family: "Lexend-Light", sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 300;
-    position: relative;
-    align-self: stretch;
+  color: var(--grey-70, #b3b3b3);
+  text-align: left;
+  font-family: "Lexend-Light", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 300;
+  position: relative;
+  align-self: stretch;
 }
 
 .container-section3 .sub-container-section3 {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .container-section3 .container2-section3 {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .container-section3 .sub-container2-section3 {
-    background: var(--grey-11, #1c1c1c);
-    border-radius: 20px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex: 1;
-    position: relative;
+  background: var(--grey-11, #1c1c1c);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
 }
 
 .container-section3 .abstract-design-section3 {
-    flex-shrink: 0;
-    width: 224px;
-    height: 213px;
-    position: absolute;
-    left: 0px;
-    top: 224px;
-    transform: translate(0px, -224px);
-    overflow: visible;
+  flex-shrink: 0;
+  width: 224px;
+  height: 213px;
+  position: absolute;
+  left: 0px;
+  top: 224px;
+  transform: translate(0px, -224px);
+  overflow: visible;
 }
 
 .container-section3 .container3-section3 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .container-section3 .card-section3 {
-    background: var(--grey-10, #1a1a1a);
-    border-radius: 16px;
-    border-style: solid;
-    border-color: var(--grey-15, #262626);
-    border-width: 1px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    justify-content: flex-start;
-    flex: 1;
-    position: relative;
-    overflow: hidden;
+  background: var(--grey-10, #1a1a1a);
+  border-radius: 16px;
+  border-style: solid;
+  border-color: var(--grey-15, #262626);
+  border-width: 1px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .container-section3 .icon-container-section3 {
-    background: linear-gradient(180deg,
-            rgba(202, 255, 51, 0.05) 0%,
-            rgba(202, 255, 51, 0) 100%);
-    border-radius: 70px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
+  background: linear-gradient(180deg,
+      rgba(202, 255, 51, 0.05) 0%,
+      rgba(202, 255, 51, 0) 100%);
+  border-radius: 70px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
 
 }
 
 .container-section3 .icon-section3 {
-    border: none !important;
-    border-image: none !important;
-    padding: 14px;
-    background: linear-gradient(180deg,
-            rgba(202, 255, 51, 0.1) 0%,
-            rgba(202, 255, 51, 0) 46.76%);
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
+  border: none !important;
+  border-image: none !important;
+  padding: 14px;
+  background: linear-gradient(180deg,
+      rgba(202, 255, 51, 0.1) 0%,
+      rgba(202, 255, 51, 0) 46.76%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
 }
 
 .container-section3 .icon2-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
 }
 
 .container-section3 .frame-section3 {
-    width: 75.43%;
-    height: 93.33%;
-    position: absolute;
-    right: 11.24%;
-    left: 13.33%;
-    bottom: 3.33%;
-    top: 3.33%;
-    overflow: hidden;
+  width: 75.43%;
+  height: 93.33%;
+  position: absolute;
+  right: 11.24%;
+  left: 13.33%;
+  bottom: 3.33%;
+  top: 3.33%;
+  overflow: hidden;
 }
 
 .container-section3 .group-section3 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0.01%;
-    left: -0.01%;
-    bottom: -0.01%;
-    top: 0.01%;
-    overflow: visible;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0.01%;
+  left: -0.01%;
+  bottom: -0.01%;
+  top: 0.01%;
+  overflow: visible;
 }
 
 .container-section3 .text-section3 {
-    color: var(--absolute-white, #ffffff);
-    text-align: center;
-    font-family: "Lexend-Regular", sans-serif;
-    font-size: 20px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-    align-self: stretch;
+  color: var(--absolute-white, #ffffff);
+  text-align: center;
+  font-family: "Lexend-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
 }
 
 .container-section3 .card2-section3 {
-    background: var(--grey-10, #1a1a1a);
-    border-radius: 16px;
-    border-style: solid;
-    border-color: var(--grey-15, #262626);
-    border-width: 1px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    overflow: hidden;
+  background: var(--grey-10, #1a1a1a);
+  border-radius: 16px;
+  border-style: solid;
+  border-color: var(--grey-15, #262626);
+  border-width: 1px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .container-section3 .frame2-section3 {
-    width: 90%;
-    height: 66.67%;
-    position: absolute;
-    right: 6.67%;
-    left: 3.33%;
-    bottom: 16.67%;
-    top: 16.67%;
-    overflow: hidden;
+  width: 90%;
+  height: 66.67%;
+  position: absolute;
+  right: 6.67%;
+  left: 3.33%;
+  bottom: 16.67%;
+  top: 16.67%;
+  overflow: hidden;
 }
 
 .container-section3 .group2-section3 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    bottom: 0%;
-    top: -0.01%;
-    overflow: visible;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: -0.01%;
+  overflow: visible;
 }
 
 .container-section3 .icon3-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: visible;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
 }
 
 .container-section3 .icon4-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: visible;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
 }
 
 .container-section3 .sub-container3-section3 {
-    display: flex;
-    flex-direction: column;
-    gap: 62px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex: 1;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
 }
 
 .container-section3 .text-container2-section3 {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .container-section3 .heading2-section3 {
-    color: var(--absolute-white, #ffffff);
-    text-align: left;
-    font-family: "Lexend-Medium", sans-serif;
-    font-size: 30px;
-    line-height: 150%;
-    font-weight: 500;
-    position: relative;
-    align-self: stretch;
+  color: var(--absolute-white, #ffffff);
+  text-align: left;
+  font-family: "Lexend-Medium", sans-serif;
+  font-size: 30px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
 }
 
 .container-section3 .container4-section3 {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .container-section3 .text-container3-section3 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex: 1;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
 }
 
 .container-section3 .number-section3 {
-    color: var(--green-60, #caff33);
-    text-align: left;
-    font-family: "Lexend-Medium", sans-serif;
-    font-size: 58px;
-    line-height: 150%;
-    font-weight: 500;
-    position: relative;
-    align-self: stretch;
+  color: var(--green-60, #caff33);
+  text-align: left;
+  font-family: "Lexend-Medium", sans-serif;
+  font-size: 58px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
 }
 
 .container-section3 .text2-section3 {
-    color: var(--grey-70, #b3b3b3);
-    text-align: left;
-    font-family: "Lexend-Light", sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 300;
-    position: relative;
-    align-self: stretch;
+  color: var(--grey-70, #b3b3b3);
+  text-align: left;
+  font-family: "Lexend-Light", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 300;
+  position: relative;
+  align-self: stretch;
 }
 
 .container-section3 .line-section3 {
-    margin-top: -1px;
-    border-style: dashed;
-    border-color: var(--grey-15, #262626);
-    border-width: 1px 0 0 0;
-    align-self: stretch;
-    flex-shrink: 0;
-    width: 146px;
-    position: relative;
-    transform-origin: 0 0;
-    transform: rotate(90deg) scale(1, 1);
+  margin-top: -1px;
+  border-style: dashed;
+  border-color: var(--grey-15, #262626);
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 146px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
 }
 
 .container-section3 .button-section3 {
-    background: var(--grey-11, #1c1c1c);
-    border-radius: 82px;
-    border-style: solid;
-    border-color: var(--grey-15, #262626);
-    border-width: 1px;
-    padding: 18px 24px 18px 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
+  background: var(--grey-11, #1c1c1c);
+  border-radius: 82px;
+  border-style: solid;
+  border-color: var(--grey-15, #262626);
+  border-width: 1px;
+  padding: 18px 24px 18px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
 }
 
 
 .container-section3 .text3-section3 {
-    color: white;
-    text-align: center;
-    font-family: "Lexend-Regular", sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
+  color: white;
+  text-align: center;
+  font-family: "Lexend-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
 }
 
 .container-section3 .button-section3:hover {
-    background-color: #C6FF00;
-    cursor: pointer;
+  background-color: #C6FF00;
+  cursor: pointer;
 }
 
 .container-section3 .button-section3:hover .text3-section3 {
-    color: black;
+  color: black;
 }
 
 .container-section3 .abstract-design2-section3 {
-    flex-shrink: 0;
-    width: 224px;
-    height: 213px;
-    position: absolute;
-    right: -5px;
-    top: 8px;
-    transform: translate(-213px, -224px);
-    overflow: visible;
-    transform: rotate(90deg);
+  flex-shrink: 0;
+  width: 224px;
+  height: 213px;
+  position: absolute;
+  right: -5px;
+  top: 8px;
+  transform: translate(-213px, -224px);
+  overflow: visible;
+  transform: rotate(90deg);
 }
 
 .container-section3 .icon5-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: visible;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
 }
 
 .container-section3 .icon6-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: visible;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
 }
 
 .container-section3 .icon7-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: visible;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
 }
 
 .container-section3 .icon8-section3 {
-    flex-shrink: 0;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: visible;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
 }
 
 .section2-container {
@@ -473,8 +473,8 @@
   border-radius: 999px;
   padding: 6px;
   width: fit-content;
-  margin-bottom: 48px;
-  
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 
@@ -488,7 +488,7 @@
   background: transparent;
   border: none;
   border-radius: 96px;
-   transition: background-color 0.4s ease, color 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .section2-toggle-btn.active {
@@ -508,7 +508,7 @@
 
 
 .section2-card {
- background-color: #1A1A1A;
+  background-color: #1A1A1A;
   padding: 40px 20px;
   text-align: center;
   border-left: 2px solid #262626;
@@ -528,7 +528,7 @@
   width: 72px;
   height: 72px;
   gap: 10px;
-  
+
 }
 
 .section2-icon-wrapper {
@@ -566,22 +566,26 @@
 
 
 @media (max-width: 768px) {
-  
-.section2-card {
-  border-left: none;
-  border-top: 2px solid #262626 ;
-}
-.section2-card:first-child {
-  border-top: none ;
-}
 
-section2-heading-row {
- flex-direction: column;
- align-items: center;
- text-align: center;
-}
+  .section2-card {
+    border-left: none;
+    border-top: 2px solid #262626;
+  }
 
- .section2-toggle {
+  .section2-card:first-child {
+    border-top: none;
+  }
+
+  .section2-heading-row {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+  }
+
+  .section2-toggle {
     justify-content: center;
   }
 
@@ -592,20 +596,17 @@ section2-heading-row {
 }
 
 @media (min-width: 768px) {
-  
+  section2-heading-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-section2-heading-row {
- flex-direction: column;
- align-items: center;
- text-align: center;
-}
-
- .section2-toggle {
+  .section2-toggle {
     justify-content: center;
   }
 
   .section2-subtext {
     text-align: center;
   }
-
 }

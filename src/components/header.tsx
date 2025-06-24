@@ -5,13 +5,17 @@ import BurgerMenu from './BurgerMenu';
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-text">
-        <img
-          src="/logo4epuha-white.png"
-          className="logo"
-        />
-        <span className="site-name">4epuBank</span>
-      </div>
+      <Link to="/home" className="logo-text">
+        <div className="logo-text">
+          <img
+            src="/logo4epuha-white.png"
+            className="logo"
+            alt="4epuBank Logo"
+          />
+          <span className="site-name">4epuBank</span>
+        </div>
+      </Link>
+
       <nav className="nav">
         <Link to="/home" className="nav-link">Home</Link>
         <Link to="/careers" className="nav-link">Careers</Link>
