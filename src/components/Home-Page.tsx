@@ -6,9 +6,6 @@ import { useState } from "react";
 export function Home() {
   return (
     <div>
-      <div className="sec">
-        <Journey />
-      </div>
 
        <div className="sec">
         <Section2 />
@@ -16,6 +13,10 @@ export function Home() {
 
       <div className="sec">
         <Section3 />
+      </div>
+
+      <div className="sec">
+        <Journey />
       </div>
 
       <div className="BGObj-1 ">
