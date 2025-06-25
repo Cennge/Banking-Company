@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/header';
+import Header from './components/Header/header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './components/Home-Page';
-import Footer from './components/Footer';
-import Error404 from './components/404'; 
+import { Home } from './components/Home-Page/Home-Page';
+import Footer from './components/Footer/Footer';
+import Error404 from './components/404-Page/404'; 
 
 function App() {
   return (

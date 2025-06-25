@@ -1,13 +1,14 @@
-import BGObjects from "./BG-Objects";
+import BGObjects from "../BG-Objects";
 import "./Home-Page.css";
-import { Journey } from "./Journey";
-import { useState } from "react"; 
+import { Journey } from "../Journey-Section/Journey";
+import { useState } from "react";
+import { IoReturnUpBack } from "react-icons/io5";
 
 export function Home() {
   return (
     <div>
 
-       <div className="sec">
+      <div className="sec">
         <Section2 />
       </div>
 
@@ -27,15 +28,15 @@ export function Home() {
 }
 
 interface Section3Props extends React.HTMLAttributes<HTMLDivElement> {
-    className?: string;
+  className?: string;
 }
 
 
 
 export function Section3(props: Section3Props) {
-    const { className = '', ...rest } = props;
-    return (
-        <div className={"container-section3 " + className} {...rest}>
+  const { className = '', ...rest } = props;
+  return (
+    <div className={"container-section3 " + className} {...rest}>
       <div className="text-container-section3">
         <div className="heading-section3">Use Cases </div>
         <div className="paragraph-section3">
@@ -285,8 +286,6 @@ export const Section2 = () => {
     </div>
   );
 };
-
-
 
 
 
