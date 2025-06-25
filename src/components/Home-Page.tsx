@@ -288,7 +288,8 @@ export const Section2 = () => {
 
 
 
-12312312312312
+
+
 
 
 
