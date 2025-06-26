@@ -1,5 +1,7 @@
 import BGObjects from "../BG-Objects";
 import "./Home-Page.css";
+import "./Section3.css";
+import "./Section2.css";
 import { Journey } from "../Journey-Section/Journey";
 import { useState } from "react";
 
@@ -29,8 +31,6 @@ export function Home() {
 interface Section3Props extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
-
-
 
 export function Section3(props: Section3Props) {
   const { className = '', ...rest } = props;
@@ -282,6 +282,15 @@ export const Section2 = () => {
           </div>
         ))}
       </div>
+    </div>
+  );
+};
+
+
+export const Section1 = () => {
+  return (
+    <div className="section1-container">
+
     </div>
   );
 };
