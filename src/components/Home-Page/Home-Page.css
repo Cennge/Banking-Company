@@ -14,3 +14,11 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .BGObj-1 {
+    top: -150px;
+    left: -200px;
+    scale: 0.8;
+  }
+}
