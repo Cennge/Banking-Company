@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './components/Home-Page/Home-Page';
 import Footer from './components/Footer/Footer';
 import Error404 from './components/404-Page/404'; 
+import ScrollToTopButton from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="*" element={<Error404 />} /> 
         </Routes>
 
+        <ScrollToTopButton />
         <Footer />
       </BrowserRouter>
     </div>
