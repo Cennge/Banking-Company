@@ -1,21 +1,28 @@
 import BGObjects from "../BG-Objects";
 import "./Home-Page.css";
+import "./Section3.css";
+import "./Section2.css";
 import { Journey } from "../Journey-Section/Journey";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export function Home() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <div>
-
-      <div className="sec">
+      <div className="sec" data-aos="fade-up">
         <Section2 />
       </div>
 
-      <div className="sec">
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section3 />
       </div>
 
-      <div className="sec">
+      <div className="sec" data-aos="fade-up" data-aos-delay="400">
         <Journey />
       </div>
 
@@ -30,8 +37,6 @@ interface Section3Props extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
 
-
-
 export function Section3(props: Section3Props) {
   const { className = '', ...rest } = props;
   return (
@@ -45,7 +50,7 @@ export function Section3(props: Section3Props) {
       </div>
       <div className="sub-container-section3">
         <div className="container2-section3">
-          <div className="sub-container2-section3">
+          <div className="sub-container2-section3" data-aos="flip-right">
             <img className="abstract-design-section3" src="bg-object-sec6.png" />
             <div className="container3-section3">
               <div className="card-section3">
@@ -157,7 +162,7 @@ export function Section3(props: Section3Props) {
               <div className="text3-section3">Learn More </div>
             </div>
           </div>
-          <div className="sub-container2-section3">
+          <div className="sub-container2-section3" data-aos="flip-left">
             <img className="abstract-design2-section3" src="bg-object-sec6.png" />
             <div className="container3-section3">
               <div className="card-section3">
@@ -282,6 +287,15 @@ export const Section2 = () => {
           </div>
         ))}
       </div>
+    </div>
+  );
+};
+
+
+export const Section1 = () => {
+  return (
+    <div className="section1-container">
+
     </div>
   );
 };
