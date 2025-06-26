@@ -1,7 +1,8 @@
 .header {
     width: 85%;
-    top: 50px;
-    left: 162px;
+    position: sticky;
+    /* top: 50px;
+    left: 162px; */
     border-radius: 100px;
     justify-content: space-between;
     border-width: 1px;
@@ -46,6 +47,7 @@
 
 .nav-link:hover {
     background-color: #262626;
+    color: #CAFF33;
 }
 
 .actions {
