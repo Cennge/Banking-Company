@@ -2,7 +2,6 @@ import BGObjects from "../BG-Objects";
 import "./Home-Page.css";
 import { Journey } from "../Journey-Section/Journey";
 import { useState } from "react";
-import { IoReturnUpBack } from "react-icons/io5";
 
 export function Home() {
   return (
@@ -286,10 +285,3 @@ export const Section2 = () => {
     </div>
   );
 };
-
-
-
-
-
-
-
