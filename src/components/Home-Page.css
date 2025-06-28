@@ -743,11 +743,15 @@ section2-heading-row {
   transform: translate(4px, -4px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1800px) {
   .section4-container {
     padding: 60px 40px;
     width: 100%;
   }
+
+  .section4-header {
+  margin-bottom: 0 auto;
+}
 
   .section4-content {
     flex-direction: column;
@@ -780,11 +784,28 @@ section2-heading-row {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 1355px) {
+
+  .section4-subtext {
+ 
+  width: 760px;
+  height: 54px;
+  
+}
+
+}
+
+
+@media (max-width: 768px) {
   .section4-container {
     padding: 40px 20px;
     width: 100%;
   }
+
+ .section4-header {
+  margin: 0 auto;
+  text-align: center;
+}
 
   .section4-subtext {
     font-size: 16px;
@@ -813,7 +834,7 @@ section2-heading-row {
   .section4-grid {
     display: flex;
     flex-direction: column;
-    gap: 50px; 
+    gap: 30px; 
   }
 
   .section4-card {
