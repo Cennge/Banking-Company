@@ -1,0 +1,134 @@
+.faq-section {
+  color: #f1f1f1;
+  text-align: center;
+  width: 85%;
+}
+
+.faq-title {
+  color: var(--absolute-white, #ffffff);
+  text-align: left;
+  font-family: "Lexend-Medium", sans-serif;
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
+    margin-bottom: 14px;
+}
+
+.faq-title .highlight {
+  color: #CAFF33;
+}
+
+.faq-subtitle {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  text-align: start;
+  
+}
+
+.faq-subtitle a {
+  color: #CAFF33;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.faq-card-content {
+  position: relative;
+  overflow-y: auto;
+  max-height: 180px;
+
+  z-index: 1;
+  font-family: Lexend;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+
+.faq-grid.expanded {
+  mask-image: none;
+  -webkit-mask-image: none;
+  max-height: none;
+  overflow: visible;
+}
+.faq-button {
+  position: relative;
+  z-index: 10;
+}
+
+
+@media (min-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-subtitle {
+    text-align: center;
+  }
+  .faq-title {
+    text-align: center;
+  }
+}
+
+
+.faq-card {
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 0 0 0.5rem #262626;
+  transition: transform 0.2s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-4px);
+}
+
+.faq-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.faq-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.faq-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 9999px;
+  background-color: #CAFF33;
+  color: #111;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-button:hover {
+  background-color: #d0ff80;
+}
+
+.faq-undrelined {
+    width: 100%;
+    height: 1px;
+    background-color: #262626;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
