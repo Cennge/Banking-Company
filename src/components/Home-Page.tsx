@@ -3,6 +3,8 @@ import "./Home-Page.css";
 import { Journey } from "./Journey";
 import { useState } from "react"; 
 
+
+
 export function Home() {
   return (
     <div>
@@ -17,6 +19,12 @@ export function Home() {
       <div className="sec">
         <Section3 />
       </div>
+
+
+<div className="sec">
+ <Section4 />
+      </div>
+
 
       <div className="BGObj-1 ">
         <BGObjects />
@@ -286,7 +294,135 @@ export const Section2 = () => {
 };
 
 
+export const Section4 = () => {
+  const [activeTab, setActiveTab] = useState('online-banking');
 
+  const features = {
+    'online-banking': [
+      {
+        title: '24/7 Account Access',
+        text: 'Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.',
+        link: '/account-access'
+      },
+      {
+        title: 'Mobile Banking App',
+        text: 'Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.',
+        link: '/mobile-app'
+      },
+      {
+        title: 'Secure Transactions',
+        text: 'Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.',
+        link: '/security'
+      },
+      {
+        title: 'Bill Pay and Transfers',
+        text: 'Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.',
+        link: '/bill-pay'
+      }
+    ],
+    'financial-tools': [
+      {
+        title: 'Budget Tracker',
+        text: 'Monitor your spending and stay on track with our comprehensive budget tracking tools. Set goals and receive insights to improve your financial health.',
+        link: '/budget-tracker'
+      },
+      {
+        title: 'Investment Portal',
+        text: 'Grow your wealth with our user-friendly investment platform. Access market data, research tools, and portfolio management features.',
+        link: '/investments'
+      },
+      {
+        title: 'Savings Calculator',
+        text: 'Plan for your future with our interactive savings and loan calculators. Visualize your financial goals and create actionable plans.',
+        link: '/calculator'
+      },
+      {
+        title: 'Credit Monitoring',
+        text: 'Keep track of your credit score and receive alerts about changes to your credit report. Get personalized tips to improve your creditworthiness.',
+        link: '/credit-monitoring'
+      }
+    ],
+    'customer-support': [
+      {
+        title: '24/7 Live Chat',
+        text: 'Get instant help with our round-the-clock live chat support. Our trained representatives are ready to assist with any banking questions or concerns.',
+        link: '/live-chat'
+      },
+      {
+        title: 'Phone Support',
+        text: 'Speak directly with our customer service team through our dedicated phone lines. Receive personalized assistance for complex banking needs.',
+        link: '/phone-support'
+      },
+      {
+        title: 'FAQ & Resources',
+        text: 'Find quick answers to common questions in our comprehensive FAQ section. Access guides, tutorials, and helpful banking resources.',
+        link: '/faq'
+      },
+      {
+        title: 'Branch Locator',
+        text: 'Find the nearest branch or ATM location with our interactive map. Get directions, hours, and contact information for in-person banking.',
+        link: '/locations'
+      }
+    ]
+  };
+
+  const currentCards = features[activeTab] || features['online-banking'];
+  const handleCardClick = (link: string) => {
+  window.location.href = link;
+};
+
+    return (
+    <div className="section4-container">
+      <div className="section4-header">
+        <h2 className="section4-heading">
+          Our <span className="highlight">Features</span>
+        </h2>
+        <p className="section4-subtext">
+          Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience.
+        </p>
+      </div>
+
+      <div className="section4-content">
+        <div className="section4-nav">
+          <button
+            className={`section4-nav-btn ${activeTab === 'online-banking' ? 'active' : ''}`}
+            onClick={() => setActiveTab('online-banking')}
+          >
+            Online Banking
+          </button>
+          <button
+            className={`section4-nav-btn ${activeTab === 'financial-tools' ? 'active' : ''}`}
+            onClick={() => setActiveTab('financial-tools')}
+          >
+            Financial Tools
+          </button>
+          <button
+            className={`section4-nav-btn ${activeTab === 'customer-support' ? 'active' : ''}`}
+            onClick={() => setActiveTab('customer-support')}
+          >
+            Customer Support
+          </button>
+        </div>
+
+        <div className="section4-grid">
+          {currentCards.map((card, index) => (
+            <div 
+              key={index} 
+              className="section4-card"
+              onClick={() => handleCardClick(card.link)}
+            >
+              <div className="section4-card-arrow">
+                <img src="arrow.svg"></img>
+              </div>
+              <h3 className="section4-card-title">{card.title}</h3>
+              <p className="section4-card-text">{card.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 
 
