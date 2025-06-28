@@ -414,3 +414,59 @@
   position: relative;
   overflow: visible;
 }
+@media (max-width: 768px) {
+  .container-section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .container-section3 .text-container-section3 {
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container-section3 .heading2-section3,
+  .container-section3 .heading-section3,
+  .container-section3 .paragraph-section3,
+  .container-section3 .text2-section3,
+  .container-section3 .text3-section3 {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .container-section3 .container2-section3,
+  .container-section3 .container3-section3,
+  .container-section3 .container4-section3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container-section3 .card-section3,
+  .container-section3 .card2-section3,
+  .container-section3 .sub-container2-section3 {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .container-section3 .number-section3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .container-section3 .button-section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+}
+
