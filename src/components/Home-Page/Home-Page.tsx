@@ -7,6 +7,8 @@ import { Journey } from "../Journey-Section/Journey";
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FAQ } from "../FAQ/FAQ";
+
 
 export function Home() {
   useEffect(() => {
@@ -17,6 +19,10 @@ export function Home() {
     <div>
       <div className="sec" data-aos="fade-up">
         <Section2 />
+      </div>
+
+       <div className="sec" data-aos="fade-up">
+        <FAQ/>
       </div>
 
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
