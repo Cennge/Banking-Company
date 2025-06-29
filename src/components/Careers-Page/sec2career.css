@@ -1,0 +1,78 @@
+.values-section {
+  color: #d1d1d1;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.values-heading {
+font-family: Lexend;
+width: 85%;
+font-weight: 500;
+font-size: 48px;
+line-height: 150%;
+letter-spacing: 0%;
+margin-bottom: 20px;
+}
+
+.highlight {
+  color: #b6ff5c;
+}
+
+.values-subtext {
+font-family: Lexend;
+font-weight: 300;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+margin-bottom: 80px;
+max-width: 70%;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.value-card {
+  border-left: 1px solid #CAFF33;
+  padding: 1.5rem 1.25rem;
+  transition: background-color 0.3s ease;
+  gap: 80px;
+}   
+
+.value-card:hover {
+  background-color: #222;
+}
+
+.value-title {
+font-family: Lexend;
+font-weight: 500;
+font-size: 58px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #4C4C4D;
+margin-bottom: 30px;
+}
+
+.value-description {
+font-family: Lexend;
+font-weight: 300;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0%;
+max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .values-heading{
+    text-align: center;
+  }
+    .values-subtext {
+        text-align: center;
+        max-width: 100%;
+    }
+}
