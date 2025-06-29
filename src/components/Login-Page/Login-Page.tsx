@@ -22,14 +22,14 @@ export function LoginSection() {
     } else {
       setError("");
       console.log("Login attempt:", { email, password });
-      // handle login
+     
     }
   };
 
   return (
     <section className="login-container">
       <div className="login-box" >
-        <img className="careersec1-background" src="bg-object-sec6.png" />
+        <img className="login-background" src="bg-object-sec6.png" />
         <h1 className="login-title">Login</h1>
         <p className="login-subtitle">Welcome back! Please log in to access your account.</p>
         <form onSubmit={handleLogin} className="login-form">

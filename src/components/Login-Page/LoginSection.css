@@ -8,6 +8,24 @@
 }
 
 
+.login-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  transform: rotate(90deg);
+  z-index: 0; /* на задний план */
+  pointer-events: none; /* не мешает кликам */
+  opacity: 0.5; /* можно настроить прозрачность */
+}
+
+.login-background img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 
 .login-box {
   background: #1C1C1C;
@@ -19,7 +37,7 @@
   color: white;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(20px);
+ margin-bottom: 12%;
 }
 
 
@@ -173,10 +191,47 @@
   margin-bottom: 0.5rem;
 }
 
+
+
+@media (max-width: 1024px) {
+  .login-box {
+    width: 80%;
+    padding: 3rem 2rem;
+    margin-bottom: 8%;
+  }
+
+  .login-title {
+    font-size: 2rem;
+  }
+
+  .login-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    width: 70%;
+  }
+
+  .social {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
 @media (max-width: 768px) {
+  .login-container {
+    padding: 1rem 0.5rem;
+  }
+
   .login-box {
     width: 100%;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.25rem;
+    margin-bottom: 6%;
   }
 
   .input-group {
@@ -184,7 +239,69 @@
     gap: 0.8rem;
   }
 
+  .login-title {
+    font-size: 1.75rem;
+  }
+
   .btn {
-    width: 80%;
+    width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .divider {
+    margin: 1.5rem 0;
+  }
+
+  .social {
+    width: 42px;
+    height: 42px;
+  }
+
+  .social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+   .login-background {
+    width: 300px;
+    height: 300px;
+    opacity: 0.3;
   }
 }
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .login-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .input-group input {
+    font-size: 0.85rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 0.85rem;
+    height: 45px;
+  }
+
+  .social {
+    width: 38px;
+    height: 38px;
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
