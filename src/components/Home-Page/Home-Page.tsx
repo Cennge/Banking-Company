@@ -3,6 +3,7 @@ import "./Home-Page.css";
 import "./Section4.css";
 import "./Section3.css";
 import "./Section2.css";
+import "./Section1.css";
 import { Journey } from "../Journey-Section/Journey";
 import { useState, useEffect } from "react";
 import AOS from "aos";
@@ -18,11 +19,15 @@ export function Home() {
   return (
     <div>
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
+        <Section1 />
+      </div>
+
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section2 />
       </div>
 
-       <div className="sec" data-aos="fade-up" data-aos-delay="200">
-        <FAQ/>
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
+        <FAQ />
       </div>
 
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
@@ -377,10 +382,10 @@ export const Section4 = () => {
 
   const currentCards = features[activeTab] || features['online-banking'];
   const handleCardClick = (link: string) => {
-  window.location.href = link;
-};
+    window.location.href = link;
+  };
 
-    return (
+  return (
     <div className="section4-container">
       <div className="section4-header">
         <h2 className="section4-heading">
@@ -415,8 +420,8 @@ export const Section4 = () => {
 
         <div className="section4-grid">
           {currentCards.map((card, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="section4-card"
               onClick={() => handleCardClick(card.link)}
             >
@@ -437,12 +442,30 @@ export const Section1 = () => {
   return (
     <div className="section1-container">
       <div className="section1-left-content">
-       
+        <div className="section1-llc-req">
+          <img src="IconLLC.png" alt="Icon" />
+          <p>No LLC Required, No Credit Check.</p>
+        </div>
+        <div className="section1-heading">
+          <h1>
+            Welcome to 4epuBank
+            Empowering Your <span className="highlight">Financial Journey</span>
+          </h1>
+        </div>
+        <div className="section1-subheading">
+          <p>At YourBank, our mission is to provide comprehensive banking
+            solutions that empower individuals and businesses to achieve their
+            financial goals. We are committed to delivering personalized and
+            innovative services that prioritize our customers' needs.</p>
+        </div>
+
+        <button className="section1-button">Open Account</button>
       </div>
+
       <div className="section1-right-content">
 
       </div>
     </div>
   );
-}
+};
 

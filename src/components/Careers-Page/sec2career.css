@@ -35,6 +35,7 @@ max-width: 70%;
 }
 
 .value-card {
+  width: 100%;
   border-left: 1px solid #CAFF33;
   padding: 1.5rem 1.25rem;
   transition: background-color 0.3s ease;
@@ -75,4 +76,7 @@ max-width: 80%;
         text-align: center;
         max-width: 100%;
     }
+  .value-title {
+    font-size: 36px;
+  }
 }

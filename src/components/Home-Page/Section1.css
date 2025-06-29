@@ -1,0 +1,69 @@
+.section1-container {
+    width: 85%;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.section1-left-content {
+    width: 50%;
+    padding-right: 20px;
+    justify-content: start;
+}
+
+.section1-llc-req {
+    display: flex;
+    padding: 15px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 6px;
+    border-radius: 61px;
+    background: #262626;
+    width: fit-content;
+}
+
+.section1-llc-req p {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: white;
+}
+
+.section1-heading {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: white;
+    margin: 15px 0;
+}
+
+.section1-subheading {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #B3B3B3;
+}
+
+.section1-button {
+    background-color: #C6FF00;
+    color: black;
+    font-weight: 600;
+    padding: 16px 36px;
+    font-size: 18px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    margin-top: 3.5rem;
+}
+
+.section1-button:hover {
+    background-color: #b3f000;
+}
