@@ -17,11 +17,11 @@ export function Home() {
 
   return (
     <div>
-      <div className="sec" data-aos="fade-up">
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section2 />
       </div>
 
-       <div className="sec" data-aos="fade-up">
+       <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <FAQ/>
       </div>
 
@@ -314,9 +314,10 @@ export const Section1 = () => {
 
 
 export const Section4 = () => {
-  const [activeTab, setActiveTab] = useState('online-banking');
+  type FeatureTab = 'online-banking' | 'financial-tools' | 'customer-support';
+  const [activeTab, setActiveTab] = useState<FeatureTab>('online-banking');
 
-  const features = {
+  const features: Record<FeatureTab, { title: string; text: string; link: string }[]> = {
     'online-banking': [
       {
         title: '24/7 Account Access',

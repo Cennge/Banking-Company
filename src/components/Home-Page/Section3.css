@@ -119,6 +119,13 @@
   flex: 1;
   position: relative;
   overflow: hidden;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.container-section3 .card-section3:hover {
+  background: var(--grey-11, #1c1c1c);
+  border-color: var(--green-60, #caff33);
+  box-shadow: 0 4px 24px 0 rgba(202, 255, 51, 0.08);
 }
 
 .container-section3 .icon-container-section3 {
@@ -206,7 +213,13 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  overflow: hidden;
+   transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.container-section3 .card2-section3:hover {
+  background: var(--grey-11, #1c1c1c);
+  border-color: var(--green-60, #caff33);
+  box-shadow: 0 4px 24px 0 rgba(202, 255, 51, 0.08);
 }
 
 .container-section3 .frame2-section3 {
