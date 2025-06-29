@@ -72,18 +72,29 @@
     pointer-events: none;
 }
 
+
 .background-benefit-card {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    opacity: 0.3;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 1; /* полностью видимая */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  
 }
 
-.background-benefit-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+.background-benefit-card {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 1;
+
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+               linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+                      linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-composite: destination-in;
 }
 
 .benefit-card:hover {
@@ -111,6 +122,7 @@
     color: #B3B3B3;
     max-width: 95%;
     margin-top: 45px;
+    
 }
 
 .benefit-icon-wrapper {
@@ -144,6 +156,7 @@
     z-index: 0;
 }
 
+
 .benefit-icon {
     border: none !important;
     border-image: none !important;
@@ -157,17 +170,54 @@
     overflow: visible;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1440px) {
     .benefits-grid {
         grid-template-columns: 1fr;
     }
 
-    .benefits-heading {
+    .benefits-subtext {
+        max-width: 100%;
         text-align: center;
     }
 
-    .benefits-subtext {
+    .benefits-heading {
+        font-size: 36px;
         text-align: center;
-        max-width: 100%;
     }
+
+    .highlight {
+        font-size: 36px;
+    }
+
+    .benefit-card {
+        height: auto;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-subtext {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .benefit-description {
+        font-size: 16px;
+    }
+
+    .benefit-title {
+        font-size: 20px;
+    }
+
+    .benefit-card {
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .benefits-section::before,
+    .benefits-section::after {
+        display: none;
+    }
+
 }
