@@ -4,6 +4,8 @@ import { Journey } from "../Journey-Section/Journey";
 import "./sec2career.css";
 import "./sec3career.css";
 import "./sec1career.css";
+import "./sec4career.css";
+
 
 export function CareerPage() {
   return (
@@ -17,6 +19,11 @@ export function CareerPage() {
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section3Career />
       </div>
+
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
+        <Section4Career />
+      </div>
+
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <FAQ />
       </div>
@@ -185,3 +192,106 @@ export function Section1Career() {
     </section>
   );
 }
+
+
+export function Section4Career() {
+  const jobs = [
+    {
+      title: 'Relationship Manager',
+      location: 'Location: India',
+      department: 'Department: Retail Banking',
+      description:
+        'As a Relationship Manager at YourBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.',
+      requirements: [
+        "Bachelor's degree in Business, Finance, or a related field",
+        'Minimum of 5 years of experience in sales or relationship management in the banking industry',
+        'Proven track record of meeting and exceeding sales targets',
+        'Excellent interpersonal and negotiation skills',
+        'Strong knowledge of banking products and services',
+      ],
+    },
+    {
+      title: 'Risk Analyst',
+      location: 'Location: India',
+      department: 'Department: Risk Management',
+      description:
+        'As a Risk Analyst at YourBank, you will play a vital role in identifying and assessing potential risks to our organization. You will analyze data, conduct risk assessments, and develop strategies to mitigate risks. We are looking for detail-oriented individuals with strong analytical skills and a solid understanding of risk management principles.',
+      requirements: [
+        "Bachelor's degree in Finance, Economics, or a related field",
+        'Minimum of 2 years of experience in risk management or a similar role',
+        'Proficiency in risk analysis tools and techniques',
+        'Strong analytical and problem-solving skills',
+        'Knowledge of regulatory requirements and industry best practices',
+      ],
+    },
+    {
+      title: 'IT Security Specialist',
+      location: 'Location: India',
+      department: 'Department: Information Technology',
+      description:
+        'As an IT Security Specialist at YourBank, you will be responsible for ensuring the security and integrity of our information systems. You will develop and implement security protocols, conduct vulnerability assessments, and respond to security incidents. We are seeking individuals with a strong technical background, knowledge of cybersecurity best practices, and a commitment to maintaining the confidentiality of customer data.',
+      requirements: [
+        "Bachelor's degree in Computer Science, Information Security, or a related field",
+        'Minimum of 5 years of experience in IT security or a similar role',
+        'In-depth knowledge of network security protocols and technologies',
+        'Familiarity with regulatory frameworks such as PCI DSS and GDPR',
+        'Professional certifications such as CISSP or CISM are preferred',
+      ],
+    },
+  ];
+
+  return (
+    <div className="section4career-container">
+      <div className="section4career-header">
+        <h2 className="section4career-heading">
+          Job <span className="highlight">Openings</span>
+        </h2>
+        <p className="section4career-subtext">
+          Explore exciting job openings at YourBank, where we value talent,
+          innovation, and a passion for customer service. Join our team and be
+          part of shaping a brighter future in the banking industry.
+        </p>
+      </div>
+
+      <div className="section4career-grid">
+        {jobs.map((job, index) => (
+          <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1400" key={index} className="section4career-card">
+            <h3 className="section4career-title">{job.title}</h3>
+
+            <div className="section4career-tags">
+              <span className="section4career-tag">{job.location}</span>
+              <span className="section4career-tag">{job.department}</span>
+            </div>
+
+            <div className="section4career-content">
+              <h4 className="section4career-subheading">About This Job</h4>
+              <p className="section4career-description">{job.description}</p>
+
+              <div className="section4career-requirements">
+                <h4 className="section4career-req-heading">
+                  Requirements & Qualifications
+                </h4>
+                <ul>
+                  {job.requirements.map((requirement, reqIndex) => (
+                    <li key={reqIndex}>
+                      <div className="requirement-line">
+                        <div className="requirement-icon" />
+                        <span>{requirement}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <a href="#" className="section4career-btn">Apply Now</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
