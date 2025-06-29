@@ -302,17 +302,6 @@ export const Section2 = () => {
   );
 };
 
-
-export const Section1 = () => {
-  return (
-    <div className="section1-container">
-
-    </div>
-  );
-};
-
-
-
 export const Section4 = () => {
   type FeatureTab = 'online-banking' | 'financial-tools' | 'customer-support';
   const [activeTab, setActiveTab] = useState<FeatureTab>('online-banking');
@@ -444,5 +433,16 @@ export const Section4 = () => {
   );
 }
 
+export const Section1 = () => {
+  return (
+    <div className="section1-container">
+      <div className="section1-left-content">
+       
+      </div>
+      <div className="section1-right-content">
 
+      </div>
+    </div>
+  );
+}
 
