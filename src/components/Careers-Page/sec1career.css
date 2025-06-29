@@ -17,6 +17,13 @@
     border-radius: 20px;
     position: relative;
 }
+.higlightsec1 {
+    font-family: Lexend;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
 
 .careersec1-background {
     flex-shrink: 0;
