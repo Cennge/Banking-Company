@@ -34,7 +34,7 @@ export function Section2Career() {
         Our <span className="highlight">Values</span>
       </h2>
       <p className="values-subtext">
-        At YourBank, our values form the foundation of our organization and guide our actions. We believe in upholding the highest standards of integrity, delivering exceptional service, and embracing innovation. These values define our culture and shape the way we work together to achieve our goals.
+        At 4epuBank, our values form the foundation of our organization and guide our actions. We believe in upholding the highest standards of integrity, delivering exceptional service, and embracing innovation. These values define our culture and shape the way we work together to achieve our goals.
       </p>
       <div className="values-grid">
         <div className="value-card">
@@ -71,23 +71,29 @@ export function Section3Career() {
 <section className="benefits-section">
   <h2 className="benefits-heading">Our <span className="highlight">Benefits</span></h2>
   <p className="benefits-subtext">
-    At YourBank, we value our employees and are dedicated to their well-being and success.
+    At 4epuBank, we value our employees and are dedicated to their well-being and success.
     We offer a comprehensive range of benefits designed to support their personal and professional growth.
   </p>
 
   <div className="benefits-grid">
     <div className="benefit-card">
-      <img className="icon1-carrersection3" src="icon1sec3.svg" />
+        <div className="benefit-icon-wrapper">
+      <img className="benefit-icon" src="icon1sec3.svg" />
+      </div>
       <h3 className="benefit-title">Competitive Compensation</h3>
+       <img className="background-benefit-card" src="backsec3ben.png" />
       <p className="benefit-description">
         We provide a competitive salary package that recognizes the skills and expertise of our employees.
-        YourBank believes in rewarding exceptional performance and offering opportunities for financial growth.
+        4epuBank believes in rewarding exceptional performance and offering opportunities for financial growth.
       </p>
     </div>
 
     <div className="benefit-card">
-      <img className="icon2-carrersection3" src="icon2sec3.svg" />
+        <div className="benefit-icon-wrapper">
+      <img className="benefit-icon" src="icon2sec3.svg" />
+      </div>
       <h3 className="benefit-title">Health and Wellness</h3>
+       <img className="background-benefit-card" src="backsec3ben.png" />
       <p className="benefit-description">
         We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and vision insurance plans.
         We also offer wellness programs, gym memberships, and resources to support a healthy lifestyle.
@@ -95,20 +101,26 @@ export function Section3Career() {
     </div>
 
     <div className="benefit-card">
-     <img className="icon3-carrersection3" src="icon3sec3.svg" />
+        <div className="benefit-icon-wrapper">
+     <img className="benefit-icon" src="icon3sec3.svg" />
+     </div>
+      <img className="background-benefit-card" src="backsec3ben.png" />
       <h3 className="benefit-title">Retirement Planning</h3>
       <p className="benefit-description">
-        YourBank is committed to helping employees plan for their future.
+        4epuBank is committed to helping employees plan for their future.
         We offer a retirement savings plan with a generous employer match to help them build a secure financial foundation for the long term.
       </p>
     </div>
 
     <div className="benefit-card">
-      <img className="icon4-carrersection3" src="icon4sec3.svg" />
+        <div className="benefit-icon-wrapper">
+      <img className="benefit-icon" src="icon4sec3.svg" />
+      </div>
       <h3 className="benefit-title">Work-Life Balance</h3>
+      <img className="background-benefit-card" src="backsec3ben.png" />
       <p className="benefit-description">
         We understand the importance of maintaining a healthy work-life balance.
-        YourBank offers flexible work arrangements, paid time off, parental leave, and other programs that support employees in managing their personal and professional commitments.
+        4epuBank offers flexible work arrangements, paid time off, parental leave, and other programs that support employees in managing their personal and professional commitments.
       </p>
     </div>
   </div>
