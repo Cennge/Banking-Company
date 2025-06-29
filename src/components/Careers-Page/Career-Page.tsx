@@ -3,10 +3,14 @@ import { FAQ } from "../FAQ/FAQ";
 import { Journey } from "../Journey-Section/Journey";
 import "./sec2career.css";
 import "./sec3career.css";
+import "./sec1career.css";
 
 export function CareerPage() {
   return (
     <div className="career-page">
+          <div className="sec" data-aos="fade-up" data-aos-delay="200">
+        <Section1Career />
+      </div>
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section2Career />
       </div>
@@ -101,7 +105,7 @@ export function Section3Career() {
           <img className="background-benefit-card" src="backsec3ben.png" />
           <p className="benefit-description">
             We provide a competitive salary package that recognizes the skills
-            and expertise of our employees. YourBank believes in rewarding
+            and expertise of our employees. 4epuBank believes in rewarding
             exceptional performance and offering opportunities for financial
             growth.
           </p>
@@ -148,11 +152,35 @@ export function Section3Career() {
           <img className="background-benefit-card" src="backsec3ben.png" />
           <p className="benefit-description">
             We understand the importance of maintaining a healthy work-life
-            balance. YourBank offers flexible work arrangements, paid time off,
+            balance. 4epuBank offers flexible work arrangements, paid time off,
             parental leave, and other programs that support employees in
             managing their personal and professional commitments.
           </p>
         </div>
+      </div>
+    </section>
+  );
+}
+export function Section1Career() {
+  return (
+    <section className="careersec1-container">
+      <img className="careersec1-background" src="bg-object-sec6.png" />
+      <div className="careersec1-image">
+        <img src="backsec1.jpg" alt="Team discussion" />
+      </div>
+      <div className="careersec1-overlay">
+        <h1 className="careersec1-heading">
+          Welcome to <span className="highlight">4epuBank</span> Careers!
+        </h1>
+        <p className="careersec1-subtext">
+          Join our team and embark on a rewarding journey in the banking
+          industry. At 4epuBank, we are committed to fostering a culture of
+          excellence and providing opportunities for professional growth. With a
+          focus on innovation, customer service, and integrity, we strive to
+          make a positive impact in the lives of our customers and communities.
+          Join us today and be a part of our mission to shape the future of
+          banking.
+        </p>
       </div>
     </section>
   );
