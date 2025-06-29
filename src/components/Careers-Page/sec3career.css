@@ -19,15 +19,6 @@ letter-spacing: 0%;
 margin-bottom: 20px;
 }
 
-.subtitle {
-    font-family: Lexend;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    max-width: 50%;
-    color: #B3B3B3;
-}
 
 .highlight {
     font-family: Lexend;
@@ -43,7 +34,7 @@ margin-bottom: 20px;
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 80px;
-    max-width: 70%;
+    max-width: 45%;
 }
 
 .benefits-grid {
@@ -55,30 +46,51 @@ margin-bottom: 20px;
 .benefit-card {
     font-family: Lexend;
     font-weight: 300;
+    height: 336px;
     font-size: 18px;
     line-height: 150%;
     letter-spacing: 0%;
-    background-image: url("backsec3ben.png");
-    color: #B3B3B3;
+    color: #B3B3B3; 
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    border-radius: 20px 50px 20px 50px;
+    background-color: #1c1c1c;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1;
 }
 
+.benefit-card::before {
+    content: "";
+    position: absolute;
+    top: -70%;
+    left: -30%;
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle at left, rgba(157, 255, 0, 0.2) 0%, rgba(157, 255, 0, 0) 100%);
+    z-index: 0;
+    filter: blur(60px);
+    opacity: 0.8;
+    pointer-events: none;
+}
+.background-benefit-card {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.background-benefit-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 .benefit-card:hover {
     background-color: #1c1c1c;
     transform: translateY(-4px);
 }
 
-.benefit-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, #caff33 0%, #111 80%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: #0f0f0f;
-    margin-bottom: 20px;
-}
 
 .benefit-title {
 font-family: Lexend;
@@ -96,6 +108,38 @@ font-size: 18px;
 line-height: 150%;
 letter-spacing: 0%;
 color: #B3B3B3;
+}
+
+.benefit-icon-wrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0; /* убираем отступ вниз — теперь иконка будет рядом с заголовком */
+  z-index: 1;
+}
+
+
+
+.benefit-icon-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(173, 255, 47, 0.4) 0%, rgba(173, 255, 47, 0) 80%);
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 0;
+}
+.benefit-icon {
+  width: 124px; 
+  height: 64px;
+  padding: 0;
+  object-fit: contain;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
