@@ -2,12 +2,16 @@ import "aos/dist/aos.css";
 import { FAQ } from "../FAQ/FAQ";
 import { Journey } from "../Journey-Section/Journey";
 import "./sec2career.css";
+import "./sec3career.css";
 
 export function CareerPage() {
     return (
         <div className="career-page">
                         <div className="sec" data-aos="fade-up" data-aos-delay="200">
                 <Section2Career />
+            </div>
+            <div className="sec" data-aos="fade-up" data-aos-delay="200">
+                <Section3Career />
             </div>
             <div className="sec" data-aos="fade-up" data-aos-delay="200">
                 <FAQ />
@@ -61,6 +65,56 @@ export function Section2Career() {
     </section>
   );
 };
+
+export function Section3Career() {
+    return (
+<section className="benefits-section">
+  <h2 className="benefits-heading">Our <span className="highlight">Benefits</span></h2>
+  <p className="benefits-subtext">
+    At YourBank, we value our employees and are dedicated to their well-being and success.
+    We offer a comprehensive range of benefits designed to support their personal and professional growth.
+  </p>
+
+  <div className="benefits-grid">
+    <div className="benefit-card">
+      <img className="icon1-carrersection3" src="icon1sec3.svg" />
+      <h3 className="benefit-title">Competitive Compensation</h3>
+      <p className="benefit-description">
+        We provide a competitive salary package that recognizes the skills and expertise of our employees.
+        YourBank believes in rewarding exceptional performance and offering opportunities for financial growth.
+      </p>
+    </div>
+
+    <div className="benefit-card">
+      <img className="icon2-carrersection3" src="icon2sec3.svg" />
+      <h3 className="benefit-title">Health and Wellness</h3>
+      <p className="benefit-description">
+        We prioritize the health and well-being of our employees by providing comprehensive medical, dental, and vision insurance plans.
+        We also offer wellness programs, gym memberships, and resources to support a healthy lifestyle.
+      </p>
+    </div>
+
+    <div className="benefit-card">
+     <img className="icon3-carrersection3" src="icon3sec3.svg" />
+      <h3 className="benefit-title">Retirement Planning</h3>
+      <p className="benefit-description">
+        YourBank is committed to helping employees plan for their future.
+        We offer a retirement savings plan with a generous employer match to help them build a secure financial foundation for the long term.
+      </p>
+    </div>
+
+    <div className="benefit-card">
+      <img className="icon4-carrersection3" src="icon4sec3.svg" />
+      <h3 className="benefit-title">Work-Life Balance</h3>
+      <p className="benefit-description">
+        We understand the importance of maintaining a healthy work-life balance.
+        YourBank offers flexible work arrangements, paid time off, parental leave, and other programs that support employees in managing their personal and professional commitments.
+      </p>
+    </div>
+  </div>
+</section>
+    );
+}
 
 
 
