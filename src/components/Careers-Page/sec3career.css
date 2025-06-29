@@ -2,22 +2,20 @@
     width: 85%;
     margin: 0 auto;
     color: #d1d1d1;
-    width: 1596;
-    height: 992;
-    top: 2010px;
-    left: 162px;
+    width: 85%;
     gap: 80px;
 }
 
 .benefits-heading {
-font-family: Lexend;
-width: 85%;
-font-weight: 500;
-font-size: 48px;
-line-height: 150%;
-letter-spacing: 0%;
-margin-bottom: 20px;
+    font-family: Lexend;
+    width: 85%;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
 }
+
 
 
 .highlight {
@@ -40,7 +38,7 @@ margin-bottom: 20px;
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    gap: 5rem;
 }
 
 .benefit-card {
@@ -50,7 +48,7 @@ margin-bottom: 20px;
     font-size: 18px;
     line-height: 150%;
     letter-spacing: 0%;
-    color: #B3B3B3; 
+    color: #B3B3B3;
     position: relative;
     overflow: hidden;
     padding: 50px;
@@ -73,6 +71,7 @@ margin-bottom: 20px;
     opacity: 0.8;
     pointer-events: none;
 }
+
 .background-benefit-card {
     position: absolute;
     inset: 0;
@@ -86,6 +85,7 @@ margin-bottom: 20px;
     object-fit: cover;
     display: block;
 }
+
 .benefit-card:hover {
     background-color: #1c1c1c;
     transform: translateY(-4px);
@@ -93,53 +93,68 @@ margin-bottom: 20px;
 
 
 .benefit-title {
-font-family: Lexend;
-font-weight: 400;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0%;
-color: #ffffff;
+    font-family: Lexend;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 10;
 }
 
 .benefit-description {
-font-family: Lexend;
-font-weight: 300;
-font-size: 18px;
-line-height: 150%;
-letter-spacing: 0%;
-color: #B3B3B3;
+    font-family: Lexend;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #B3B3B3;
+    max-width: 95%;
+    margin-top: 45px;
 }
 
 .benefit-icon-wrapper {
-  position: relative;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0; /* убираем отступ вниз — теперь иконка будет рядом с заголовком */
-  z-index: 1;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
 }
-
+.benefit-title-wrapper {
+    flex-wrap: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap : 30px;
+}
 
 
 .benefit-icon-wrapper::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(173, 255, 47, 0.4) 0%, rgba(173, 255, 47, 0) 80%);
-  border-radius: 50%;
-  opacity: 0.8;
-  z-index: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(173, 255, 47, 0.4) 0%, rgba(173, 255, 47, 0) 80%);
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 0;
 }
+
 .benefit-icon {
-  width: 124px; 
-  height: 64px;
-  padding: 0;
-  object-fit: contain;
-  border-radius: 50%;
-  z-index: 1;
+    border: none !important;
+    border-image: none !important;
+    background: linear-gradient(180deg,
+            rgba(202, 255, 51, 0.1) 0%,
+            rgba(202, 255, 51, 0) 46.76%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
 }
 
 @media (max-width: 768px) {
