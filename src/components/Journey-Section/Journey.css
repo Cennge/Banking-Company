@@ -75,3 +75,86 @@
     top: -50px;
     left: -50px;
 }
+
+
+@media (max-width:1024px) {
+    .hero-container-journey {
+        padding: 60px 40px;
+    }
+
+    .hero-content-journey {
+        max-width: 80%;
+    }
+
+    .hero-heading-journey {
+        font-size: 23px;
+    }
+
+    .hero-subtext-journey {
+        font-size: 15px;
+        max-width: 90%;
+    }
+
+    .image-journey {
+        width: 300px;
+        top: -30px;
+        left: -30px;
+    }
+    .hero-button-journey {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container-journey {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content-journey {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-heading-journey {
+        font-size: 36px;
+    }
+
+    .hero-subtext-journey {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .image-journey {
+        width: 300px;
+        top: -30px;
+        left: -30px;
+    }
+
+    .hero-button-journey {
+        margin-top: 24px; 
+    }
+
+    @media (max-width: 480px) {
+        .hero-heading-journey {
+            font-size: 28px;
+        }
+
+        .hero-subtext-journey {
+            font-size: 14px;
+        }
+
+        .image-journey {
+            width: 250px;
+            top: -20px;
+            left: -20px;
+        }
+
+        .hero-button-journey {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+}
