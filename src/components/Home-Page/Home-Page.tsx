@@ -443,7 +443,7 @@ const transactionsData = [
   { name: "Anna Brown", amount: "-$99.00" },
   { name: "John Doe", amount: "+$120.00" },
   { name: "Nine Mice", amount: "-$15.50" },
-  { name: "HeavenHeaven's Raya", amount: "+$200.00" },
+  { name: "Heaven's Raya", amount: "+$200.00" },
   { name: "Emily Clark", amount: "-$75.25" },
   { name: "Kai Angel", amount: "+$54.00" },
   { name: "Olivia White", amount: "-$120.00" },
