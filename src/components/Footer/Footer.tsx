@@ -2,6 +2,16 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import "./Footer.css"
 import { Link, Outlet } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+export function ScrollToTopOnRouteChange() {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }, [pathname]);
+    return null;
+}
 
 export default function Footer() {
     return (
@@ -16,11 +26,10 @@ export default function Footer() {
                         <span className="site-name">4epuBank</span>
                     </div></div>
                 <div className="footer-nav">
-                    <Link to="/home" className="nav-link">Home</Link>
-                    <Link to="/careers" className="nav-link">Careers</Link>
-                    <Link to="/about" className="nav-link">About</Link>
-                    <Link to="/security" className="nav-link">Security</Link>
-
+                    <Link to="/home" className="nav-link" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
+                    <Link to="/careers" className="nav-link" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Careers</Link>
+                    <Link to="/about" className="nav-link" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>About</Link>
+                    <Link to="/security" className="nav-link" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Security</Link>
                     <Outlet />
                 </div>
             </div>
