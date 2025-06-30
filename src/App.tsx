@@ -10,8 +10,14 @@ import { LoginPage } from './components/Login-Page/Login-Page';
 import { SignInPage } from './components/SignIn-Page/SignIn-Page';
 import { AboutPage } from './components/About-Page/About-Page';
 import { SecurityPage } from './components/Security-Page/Security-Page';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <BrowserRouter>
