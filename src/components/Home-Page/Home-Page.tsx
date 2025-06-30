@@ -3,12 +3,12 @@ import "./Home-Page.css";
 import "./Section4.css";
 import "./Section3.css";
 import "./Section2.css";
+import "./Section1.css";
 import { Journey } from "../Journey-Section/Journey";
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FAQ } from "../FAQ/FAQ";
-
 
 export function Home() {
   useEffect(() => {
@@ -18,11 +18,15 @@ export function Home() {
   return (
     <div>
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
+        <Section1 />
+      </div>
+
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section2 />
       </div>
 
-       <div className="sec" data-aos="fade-up" data-aos-delay="200">
-        <FAQ/>
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
+        <FAQ />
       </div>
 
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
@@ -377,10 +381,10 @@ export const Section4 = () => {
 
   const currentCards = features[activeTab] || features['online-banking'];
   const handleCardClick = (link: string) => {
-  window.location.href = link;
-};
+    window.location.href = link;
+  };
 
-    return (
+  return (
     <div className="section4-container">
       <div className="section4-header">
         <h2 className="section4-heading">
@@ -415,8 +419,8 @@ export const Section4 = () => {
 
         <div className="section4-grid">
           {currentCards.map((card, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="section4-card"
               onClick={() => handleCardClick(card.link)}
             >
@@ -433,16 +437,137 @@ export const Section4 = () => {
   );
 }
 
+const transactionsData = [
+  { name: "Joel Kenley", amount: "-$68.00" },
+  { name: "Mark Smith", amount: "-$45.00" },
+  { name: "Lenen Roy", amount: "+$32.00" },
+  { name: "Anna Brown", amount: "-$99.00" },
+  { name: "John Doe", amount: "+$120.00" },
+  { name: "Sophie Turner", amount: "-$15.50" },
+  { name: "Michael Green", amount: "+$200.00" },
+  { name: "Emily Clark", amount: "-$75.25" },
+  { name: "David Lee", amount: "+$54.00" },
+  { name: "Olivia White", amount: "-$120.00" },
+  { name: "Lucas Black", amount: "+$80.00" },
+  { name: "Emma Wilson", amount: "-$33.00" },
+];
+
 export const Section1 = () => {
+  const [transactions, setTransactions] = useState(() => {
+    const initialTransactions: { name: string; amount: string }[] = [];
+    while (initialTransactions.length < 3) {
+      const randomTransaction = transactionsData[Math.floor(Math.random() * transactionsData.length)];
+      if (!initialTransactions.includes(randomTransaction)) {
+        initialTransactions.push(randomTransaction);
+      }
+    }
+    return initialTransactions;
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTransactions(prev => {
+        const randomTransaction = transactionsData[Math.floor(Math.random() * transactionsData.length)];
+        const updated = [randomTransaction, ...prev].slice(0, 3);
+        return updated;
+      });
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="section1-container">
       <div className="section1-left-content">
-       
-      </div>
-      <div className="section1-right-content">
+        <div className="section1-llc-req">
+          <img src="IconLLC.png" alt="Icon" />
+          <p>No LLC Required, No Credit Check.</p>
+        </div>
+        <div className="section1-heading">
+          <h1>
+            Welcome to 4epuBank
+            Empowering Your <span className="highlight">Financial Journey</span>
+          </h1>
+        </div>
+        <div className="section1-subheading">
+          <p>At YourBank, our mission is to provide comprehensive banking
+            solutions that empower individuals and businesses to achieve their
+            financial goals. We are committed to delivering personalized and
+            innovative services that prioritize our customers' needs.</p>
+        </div>
 
+        <button className="section1-button">Open Account</button>
+      </div>
+
+      <div className="section1-right-content" data-aos="flip-right" data-aos-delay="300">
+        <div className="section1-right-container">
+          <div className="your-transaction-container">
+            <p>Your Transactions</p>
+          </div>
+
+          <div className="transactions-list" data-aos="zoom-in" data-aos-delay="500">
+            {transactions.map((transaction, index) => (
+              <div
+                key={index}
+                className={`transaction-item ${index !== 0 ? 'transaction-item-old' : ''}`}
+                style={{
+                  transform: `scale(${1 - index * 0.05}) translateY(${index * 60}px)`,
+                  opacity: 1 - index * 0.3,
+                  zIndex: transactions.length - index,
+                }}
+              >
+                <div className="transaction-details">
+                  <img src="./transaction.png" alt="transaction" />
+                  <div>
+                    <p>Transaction</p>
+                    <span className="transaction-name">{transaction.name}</span>
+                  </div>
+                </div>
+                <span className="transaction-amount">{transaction.amount}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="money-exchange-container">
+            <p>Money Exchange</p>
+          </div>
+
+          <div className="section1-table-container" data-aos="zoom-out-up" data-aos-delay="700">
+            <table className="exchange-table">
+              <colgroup>
+                <col style={{ width: "50%" }} />
+                <col style={{ width: "50%" }} />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className="currency-info">
+                      <img src="https://flagcdn.com/w40/eu.png" alt="INR" />
+                      <div>
+                        <div className="currency-code">EUR</div>
+                        <div className="currency-name">Euro</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="currency-info">
+                      <img src="https://flagcdn.com/w40/us.png" alt="USD" />
+                      <div>
+                        <div className="currency-code">USD</div>
+                        <div className="currency-name">United States Dollar</div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>100</td>
+                  <td>117.22</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
-
+};
