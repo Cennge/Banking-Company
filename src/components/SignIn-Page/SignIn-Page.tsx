@@ -18,7 +18,7 @@ export function SignInSection() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !password) {
-      setError("Please fill in both fields");
+      setError("Please fill in all fields");
     } else {
       setError("");
       console.log("Login attempt:", { email, password });
