@@ -554,7 +554,7 @@ export const Section1 = () => {
                       <img src="https://flagcdn.com/w40/us.png" alt="USD" />
                       <div>
                         <div className="currency-code">USD</div>
-                        <div className="currency-name">United States Dollar</div>
+                        <div className="currency-name">Dollar</div>
                       </div>
                     </div>
                   </td>
