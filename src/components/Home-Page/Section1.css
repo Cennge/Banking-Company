@@ -219,28 +219,28 @@
 }
 
 @media (max-width: 1024px) {
-  .section1-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .section1-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .section1-left-content,
-  .section1-right-content {
-    width: 100%;
-  }
+    .section1-left-content,
+    .section1-right-content {
+        width: 100%;
+    }
 
-  .section1-left-content {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-  }
+    .section1-left-content {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 768px) {
     .section1-right-content {
         width: 100%;
     }
-    
+
     .section1-right-container {
         width: 100%;
         padding: 20px;

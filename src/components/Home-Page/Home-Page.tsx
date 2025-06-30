@@ -438,18 +438,17 @@ export const Section4 = () => {
 }
 
 const transactionsData = [
-  { name: "Joel Kenley", amount: "-$68.00" },
-  { name: "Mark Smith", amount: "-$45.00" },
-  { name: "Lenen Roy", amount: "+$32.00" },
+  { name: "Inna Nochevkina", amount: "-$68.00" },
+  { name: "Alexander Ivanov", amount: "+$32.00" },
   { name: "Anna Brown", amount: "-$99.00" },
   { name: "John Doe", amount: "+$120.00" },
-  { name: "Sophie Turner", amount: "-$15.50" },
-  { name: "Michael Green", amount: "+$200.00" },
+  { name: "Nine Mice", amount: "-$15.50" },
+  { name: "HeavenHeaven's Raya", amount: "+$200.00" },
   { name: "Emily Clark", amount: "-$75.25" },
-  { name: "David Lee", amount: "+$54.00" },
+  { name: "Kai Angel", amount: "+$54.00" },
   { name: "Olivia White", amount: "-$120.00" },
-  { name: "Lucas Black", amount: "+$80.00" },
-  { name: "Emma Wilson", amount: "-$33.00" },
+  { name: "Code Eighty", amount: "+$80.00" },
+  { name: "Code Ten", amount: "-$33.00" },
 ];
 
 export const Section1 = () => {
