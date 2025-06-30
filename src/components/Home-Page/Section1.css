@@ -7,6 +7,8 @@
 }
 
 .section1-left-content {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding-right: 20px;
 }
@@ -71,6 +73,7 @@
     transition: background-color 0.3s ease;
     z-index: 1;
     margin-top: 3.5rem;
+    width: fit-content;
 }
 
 .section1-button:hover {
@@ -213,4 +216,33 @@
 .currency-name {
     font-size: 14px;
     color: #ccc;
+}
+
+@media (max-width: 1024px) {
+  .section1-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1-left-content,
+  .section1-right-content {
+    width: 100%;
+  }
+
+  .section1-left-content {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+    .section1-right-content {
+        width: 100%;
+    }
+    
+    .section1-right-container {
+        width: 100%;
+        padding: 20px;
+    }
 }
