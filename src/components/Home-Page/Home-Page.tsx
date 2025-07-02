@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FAQ } from "../FAQ/FAQ";
+import { Link } from "react-router-dom";
 
 export function Home() {
   useEffect(() => {
@@ -499,6 +500,16 @@ export const Section1 = () => {
       </div>
 
       <div className="section1-right-content" data-aos="flip-right" data-aos-delay="300">
+        <img className="arrows-up-section1" src="./arrows-up-section1.png" alt="income" />
+
+        <div className="section1-income-card">
+          <div className="section1-income-icon">+</div>
+          <div className="section1-income-text">
+            <div className="section1-income-amount">+ $5000.00</div>
+            <div className="section1-income-label">Monthly Income</div>
+          </div>
+        </div>
+
         <div className="section1-right-container">
           <div className="your-transaction-container">
             <p>Your Transactions</p>
@@ -564,6 +575,17 @@ export const Section1 = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <Link to="/login" className="section1-right-button" data-aos="zoom-out" data-aos-delay="800">Exchange</Link>
+        </div>
+
+        <div className="supported-currency">
+          <span className="label">Supported Currency</span>
+          <div className="section1-icons">
+            <div className="section1-icon">$</div>
+            <div className="section1-icon">€</div>
+            <div className="section1-icon">₿</div>
+            <div className="section1-icon">Ξ</div>
           </div>
         </div>
       </div>

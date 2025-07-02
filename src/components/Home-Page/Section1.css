@@ -1,4 +1,5 @@
 .section1-container {
+    margin-top: 50px;
     width: 85%;
     padding-top: 10px;
     padding-bottom: 80px;
@@ -19,6 +20,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.arrows-up-section1 {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translateX(-50%);
+    width: 400px;
+    z-index: -1;
 }
 
 .section1-llc-req {
@@ -218,7 +228,130 @@
     color: #ccc;
 }
 
+.section1-right-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22251B;
+    margin-top: 25px;
+    border-radius: 5rem;
+    padding: 15px;
+    color: #D1FF4D;
+    cursor: pointer;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+}
+
+.section1-income-card {
+    position: absolute;
+    z-index: 10;
+    top: -40px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    background: #22251B;
+    border-radius: 12px;
+    padding: 12px 20px;
+    width: fit-content;
+    gap: 12px;
+}
+
+.section1-income-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C6FF00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #22251B;
+}
+
+.section1-income-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.section1-income-amount {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.section1-income-label {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #B3B3B3;
+}
+
+.supported-currency {
+    margin-top: 20px;
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    background: #22251B;
+    border-radius: 999px;
+    padding: 8px 10px;
+    gap: 16px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.supported-currency .label {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.supported-currency .section1-icons {
+    display: flex;
+    align-items: center;
+    background: #1A1A1A;
+    padding: 8px 12px;
+    border-radius: 999px;
+    gap: 8px;
+}
+
+.supported-currency .section1-icon {
+    width: 40px;
+    height: 40px;
+    background: #262626;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C6FF00;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.supported-currency .section1-icon:hover {
+    background: #333333;
+}
+
 @media (max-width: 1024px) {
+    .supported-currency {
+        margin-left: 0;
+    }
+
+    .section1-container {
+        margin-top: 0;
+    }
+
+    .section1-income-card{
+        display: none;
+    }
+
+    .arrows-up-section1 {
+        display: none;    }
+
     .section1-container {
         flex-direction: column;
         align-items: center;
@@ -246,3 +379,9 @@
         padding: 20px;
     }
 }
+
+@media (max-width: 375px) {
+    .supported-currency .label {
+        font-size: 14px;
+    }
+} 
