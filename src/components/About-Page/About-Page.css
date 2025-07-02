@@ -1,0 +1,113 @@
+.careersec1-top-heading {
+font-family: Lexend;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0%;
+
+}
+.careersec1-container {
+    position: relative;
+    width: 85%;
+    overflow: hidden;
+    font-family: 'Lexend', sans-serif;
+    background-color: #1C1C1C;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 60px;
+    margin-left: 190px;
+}
+
+.careersec1-image img {
+    width: 65%;
+    margin-left: auto;
+    border-radius: 20px;
+    position: relative;
+}
+.higlightsec1 {
+    font-family: Lexend;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.careersec1-background {
+    flex-shrink: 0;
+    width: 424px;
+    height: 413px;
+    position: absolute;
+    right: -5px;
+    top: 8px;
+    transform: translate(-213px, -224px);
+    overflow: visible;
+    transform: rotate(90deg);
+}
+
+.careersec1-overlay {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 50%;
+    height: 60%;
+    padding: 70px;
+    background-color: #121212;
+    color: #d1d1d1;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.careersec1-heading {
+    font-size: 58px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.careersec1-subtext {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #B3B3B3;
+}
+
+
+@media (max-width: 768px) {
+    .careersec1-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .careersec1-image img {
+        height: auto;
+        border-radius: 0;
+    }
+
+    .careersec1-overlay {
+        position: static;
+        width: 100%;
+        padding: 40px 30px;
+        border-radius: 0;
+        background-color: #121212;
+        text-align: center;
+    }
+
+    .careersec1-heading {
+        font-size: 32px;
+    }
+
+    .careersec1-subtext {
+        font-size: 15px;
+        max-width: 100%;
+    }
+}
