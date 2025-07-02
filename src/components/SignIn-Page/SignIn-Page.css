@@ -1,0 +1,310 @@
+.SignIn-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+
+.SignIn-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    transform: rotate(90deg);
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.SignIn-background img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.SignIn-box {
+    background: #1C1C1C;
+    border-radius: 1.5rem;
+    padding: 5% 5%;
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12%;
+    overflow: hidden;
+}
+
+
+.SignIn-title {
+    font-size: 2.5rem;
+    color: #ccff00;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.SignIn-subtitle {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 2.5rem;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+    z-index: 100;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 0.9rem 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1a1a1a;
+    color: #aaa;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.2s ease;
+    z-index: 100;
+} 
+
+.input-group input:focus {
+    border: 1px solid #ccff00;
+}
+
+.input-group input::placeholder {
+    color: #555;
+}
+
+.forgot-link {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin: 1rem 0 2rem 0;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.forgot-link:hover {
+    color: #ccff00;
+}
+
+.btn {
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    transition: all 0.2s ease;
+}
+
+.login-btn {
+    background-color: #ccff00;
+    color: #000;
+    box-shadow: 0 0 12px rgba(204, 255, 0, 0.3);
+}
+
+.login-btn:hover {
+    background-color: #b8e600;
+    box-shadow: 0 0 16px rgba(204, 255, 0, 0.4);
+}
+
+.signup-btn {
+    background-color: #1a1a1a;
+    color: #aaa;
+    border: 1px solid #333;
+}
+
+.signup-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 0.85rem;
+    color: #555;
+
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #333;
+    margin: 0 1rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social {
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(204, 255, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+
+.social:hover {
+    background-color: #222;
+    border-color: #ccff00;
+
+}
+
+.social-icon {
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.social:hover .social-icon {
+    transform: scale(1.1);
+}
+
+
+.error {
+    color: #ff4444;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width: 1024px) {
+    .SignIn-box {
+        width: 80%;
+        padding: 3rem 2rem;
+        margin-bottom: 8%;
+    }
+
+    .SignIn-title {
+        font-size: 2rem;
+    }
+
+    .SignIn-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        width: 70%;
+    }
+
+    .social {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .SignIn-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .SignIn-box {
+        width: 100%;
+        padding: 2rem 1.25rem;
+        margin-bottom: 6%;
+    }
+
+    .SignIn-group {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .SignIn-title {
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .divider {
+        margin: 1.5rem 0;
+    }
+
+    .social {
+        width: 42px;
+        height: 42px;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .SignIn-background {
+        width: 300px;
+        height: 300px;
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 480px) {
+    .SignIn-box {
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .SignIn-title {
+        font-size: 1.5rem;
+    }
+
+    .SignIn-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .SignIn-group input {
+        font-size: 0.85rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 0.85rem;
+        height: 45px;
+    }
+
+    .social {
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
