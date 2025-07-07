@@ -21,7 +21,6 @@
 .highlight {
     font-family: Lexend;
     font-weight: 500;
-    font-size: 48px;
     line-height: 150%;
     letter-spacing: 0%;
 }
@@ -184,10 +183,6 @@
     .benefits-heading {
         font-size: 36px;
         text-align: center;
-    }
-
-    .highlight {
-        font-size: 36px;
     }
 
     .benefit-card {
