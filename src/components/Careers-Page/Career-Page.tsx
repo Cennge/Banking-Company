@@ -10,12 +10,14 @@ import "./sec4career.css";
 export function CareerPage() {
   return (
     <div className="career-page">
-          <div className="sec" data-aos="fade-up" data-aos-delay="200">
+      <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section1Career />
       </div>
+
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section2Career />
       </div>
+
       <div className="sec" data-aos="fade-up" data-aos-delay="200">
         <Section3Career />
       </div>
@@ -168,14 +170,16 @@ export function Section3Career() {
     </section>
   );
 }
+
+
 export function Section1Career() {
   return (
     <section className="careersec1-container">
       <img className="careersec1-background" src="bg-object-sec6.png" />
-      <div className="careersec1-image">
+      <div className="careersec1-image" data-aos="zoom-out-up">
         <img src="backsec1.jpg" alt="Team discussion" />
       </div>
-      <div className="careersec1-overlay">
+      <div className="careersec1-overlay" data-aos="zoom-in-right">
         <h1 className="careersec1-heading">
           Welcome to <span className="highlight">4epuBank</span> Careers!
         </h1>
@@ -183,7 +187,7 @@ export function Section1Career() {
           Join our team and embark on a rewarding journey in the banking
           industry. At 4epuBank, we are committed to fostering a culture of
           excellence and providing opportunities for professional growth. With a
-          focus on innovation, customer service, and integrity, we strive to
+          focus on innovation, and integrity, we strive to
           make a positive impact in the lives of our customers and communities.
           Join us today and be a part of our mission to shape the future of
           banking.
@@ -256,8 +260,8 @@ export function Section4Career() {
       <div className="section4career-grid">
         {jobs.map((job, index) => (
           <div data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1400" key={index} className="section4career-card">
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1400" key={index} className="section4career-card">
             <h3 className="section4career-title">{job.title}</h3>
 
             <div className="section4career-tags">

@@ -5,13 +5,12 @@
 }
 
 .values-heading {
-font-family: Lexend;
-width: 85%;
-font-weight: 500;
-font-size: 48px;
-line-height: 150%;
-letter-spacing: 0%;
-margin-bottom: 20px;
+  font-family: Lexend;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
 }
 
 .highlight {
@@ -19,13 +18,13 @@ margin-bottom: 20px;
 }
 
 .values-subtext {
-font-family: Lexend;
-font-weight: 300;
-font-size: 18px;
-line-height: 150%;
-letter-spacing: 0%;
-margin-bottom: 80px;
-max-width: 70%;
+  font-family: Lexend;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 80px;
+  max-width: 70%;
 }
 
 .values-grid {
@@ -40,41 +39,44 @@ max-width: 70%;
   padding: 1.5rem 1.25rem;
   transition: background-color 0.3s ease;
   gap: 80px;
-}   
+}
 
 .value-card:hover {
   background-color: #222;
 }
 
 .value-title {
-font-family: Lexend;
-font-weight: 500;
-font-size: 58px;
-line-height: 150%;
-letter-spacing: 0%;
-color: #4C4C4D;
+  font-family: Lexend;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4C4C4D;
 }
 
 .value-description {
-font-family: Lexend;
-font-weight: 300;
-font-size: 18px;
-line-height: 150%;
-letter-spacing: 0%;
-max-width: 80%;
+  font-family: Lexend;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  max-width: 80%;
 }
 
 @media (max-width: 768px) {
   .values-grid {
     grid-template-columns: 1fr;
   }
-  .values-heading{
+
+  .values-heading {
     text-align: center;
   }
-    .values-subtext {
-        text-align: center;
-        max-width: 100%;
-    }
+
+  .values-subtext {
+    text-align: center;
+    max-width: 100%;
+  }
+
   .value-title {
     font-size: 36px;
   }
