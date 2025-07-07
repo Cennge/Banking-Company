@@ -17,10 +17,10 @@
     border-radius: 20px;
     position: relative;
 }
-.higlightsec1 {
-    font-family: Lexend;
+
+.highlight {
+    font-family: 'Lexend', sans-serif;
     font-weight: 500;
-    font-size: 48px;
     line-height: 150%;
     letter-spacing: 0%;
 }
@@ -30,11 +30,10 @@
     width: 424px;
     height: 413px;
     position: absolute;
-    right: -5px;
-    top: 8px;
-    transform: translate(-213px, -224px);
+    right: -220px;
+    top: 10px;
+    transform: translate(-213px, -224px) rotate(90deg);
     overflow: visible;
-    transform: rotate(90deg);
 }
 
 .careersec1-overlay {
@@ -43,7 +42,7 @@
     left: 60px;
     width: 50%;
     height: 60%;
-    padding: 70px;
+    padding: 50px;
     background-color: #121212;
     color: #d1d1d1;
     border-top-left-radius: 50px;
@@ -62,6 +61,10 @@
     color: white;
     margin-bottom: 30px;
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 
 .careersec1-subtext {
@@ -69,36 +72,79 @@
     font-weight: 300;
     line-height: 1.6;
     color: #B3B3B3;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-
-@media (max-width: 768px) {
-    .careersec1-container {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .careersec1-image img {
-        height: auto;
-        border-radius: 0;
+@media (max-width: 1440px) {
+    .careersec1-heading {
+        font-size: 38px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 30px;
+        line-height: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .careersec1-overlay {
-        position: static;
-        width: 100%;
-        padding: 40px 30px;
-        border-radius: 0;
-        background-color: #121212;
-        text-align: center;
+        width: 50%;
+        height: 70%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .careersec1-background {
+        display: none;
     }
 
+    .careersec1-container {
+        width: 85%;
+        padding: 0px;
+        background: #121212;
+    }
+
+    .careersec1-image {
+        width: 100%;
+    }
+
+    .careersec1-image img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .careersec1-overlay {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        padding-bottom: 10px;
+        border-radius: 30px;
+        top: -8%;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .careersec1-overlay {
+        top: -4%;
+    }
+}
+
+@media (max-width: 425px) {
     .careersec1-heading {
         font-size: 32px;
     }
 
     .careersec1-subtext {
         font-size: 15px;
-        max-width: 100%;
     }
 }
