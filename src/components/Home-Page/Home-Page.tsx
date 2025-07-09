@@ -4,6 +4,7 @@ import "./Section4.css";
 import "./Section3.css";
 import "./Section2.css";
 import "./Section1.css";
+import "./Carousel.css";
 import { Journey } from "../Journey-Section/Journey";
 import { useState, useEffect } from "react";
 import AOS from "aos";
@@ -39,6 +40,10 @@ export function Home() {
       </div>
 
       <div className="sec" data-aos="fade-up" data-aos-delay="400">
+        <Carousel />
+      </div>
+
+      <div className="sec" data-aos="fade-up" data-aos-delay="400">
         <Journey />
       </div>
 
@@ -49,6 +54,118 @@ export function Home() {
   );
 }
 
+export function Carousel() {
+  const [activeTab, setActiveTab] = useState<'individualsCarousel' | 'businessCarousel'>('individualsCarousel');
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const individualsTestimonials = [
+    {
+      text: "4epuBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.",
+      author: "Sara T"
+    },
+    {
+      text: "I love the convenience of 4epuBank mobile banking app. It allows me to stay on top of my finances and make transactions on the go.",
+      author: "Emily G"
+    },
+    {
+      text: "Thanks to 4epuBank financial advisory team, I was able to plan for my retirement with confidence. Hello Diana you are the coolest",
+      author: "Ilya G"
+    }
+  ];
+
+  const businessTestimonials = [
+    {
+      text: "I recently started my own business, and 4epuBank has been instrumental in helping me set up my business accounts and secure the financing I needed.",
+      author: "John D"
+    },
+    {
+      text: "4epuBank business credit services helped me expand my startup. Their team understood my vision and offered flexible funding options quickly.",
+      author: "Linda B"
+    },
+    {
+      text: "I've tried many banks, but 4epuBank stands out. The customer service is responsive, and the digital experience is unmatched.",
+      author: "Carlos N"
+    }
+  ];
+
+  const testimonials = activeTab === 'individualsCarousel' ? individualsTestimonials : businessTestimonials;
+
+  useEffect(() => {
+    setActiveIndex(0); // reset when switching tabs
+  }, [activeTab]);
+
+  const handlePrev = () => {
+    setActiveIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prev) =>
+      prev === testimonials.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const getPositionClass = (index: number) => {
+    const total = testimonials.length;
+
+    if (index === activeIndex) return 'active';
+    else if ((index + total) % total === (activeIndex - 1 + total) % total) return 'prev';
+    else if ((index + total) % total === (activeIndex + 1) % total) return 'next';
+    else if ((index + total) % total === (activeIndex - 2 + total) % total) return 'second-prev';
+    else if ((index + total) % total === (activeIndex + 2) % total) return 'second-next';
+    else return 'hidden';
+  };
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel-heading-row">
+        <div>
+          <h2 className="carousel-heading">
+            Our <span className="highlight">Testimonials</span>
+          </h2>
+          <p className="section2-subtext">
+            Discover a range of comprehensive and customizable banking products at 4epuBank, designed to suit your unique financial needs and aspirations.
+          </p>
+        </div>
+
+        <div className="carousel-toggle">
+          <button
+            className={`carousel-toggle-btn ${activeTab === 'individualsCarousel' ? 'active' : ''}`}
+            onClick={() => setActiveTab('individualsCarousel')}
+          >
+            For Individuals
+          </button>
+          <button
+            className={`carousel-toggle-btn ${activeTab === 'businessCarousel' ? 'active' : ''}`}
+            onClick={() => setActiveTab('businessCarousel')}
+          >
+            For Businesses
+          </button>
+        </div>
+      </div>
+
+      <div className="carousel-wrapper">
+        <button className="nav-btn left" onClick={handlePrev}>←</button>
+
+        <div className="carousel">
+          {testimonials.map((item, index) => (
+            <div
+              key={index}
+              className={`testimonial-card ${getPositionClass(index)}`}
+            >
+              <div className="quote-mark">“</div>
+              <p className="testimonial-text">{item.text}</p>
+              <p className="testimonial-author">{item.author}</p>
+            </div>
+          ))}
+        </div>
+
+        <button className="nav-btn right" onClick={handleNext}>→</button>
+      </div>
+    </div>
+  );
+}
 interface Section3Props extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
 }
