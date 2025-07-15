@@ -1,4 +1,3 @@
-import "aos/dist/aos.css";
 import { FAQ } from "../FAQ/FAQ";
 import { Journey } from "../Journey-Section/Journey";
 import "./sec2career.css";
